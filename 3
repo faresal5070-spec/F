@@ -1,0 +1,976 @@
+-- ts file was generated at discord.gg/25ms
+
+local _ScreenGui = Instance.new('ScreenGui')
+local _Frame = Instance.new('Frame')
+local _Frame2 = Instance.new('Frame')
+local _Frame3 = Instance.new('Frame')
+local _TextButton = Instance.new('TextButton')
+local _TextButton2 = Instance.new('TextButton')
+local _TextLabel = Instance.new('TextLabel')
+local _ScrollingFrame = Instance.new('ScrollingFrame')
+
+Instance.new('UIListLayout')
+
+local _TextBox = Instance.new('TextBox')
+local _TextButton3 = Instance.new('TextButton')
+local _TextLabel2 = Instance.new('TextLabel')
+local _TextButton4 = Instance.new('TextButton')
+local _ScrollingFrame2 = Instance.new('ScrollingFrame')
+local _ScrollingFrame3 = Instance.new('ScrollingFrame')
+local _TextButton5 = Instance.new('TextButton')
+local _UICorner = Instance.new('UICorner')
+local _UICorner2 = Instance.new('UICorner')
+local _UICorner3 = Instance.new('UICorner')
+local _UICorner4 = Instance.new('UICorner')
+local _UICorner5 = Instance.new('UICorner')
+
+Instance.new('TextButton')
+
+local _UICorner6 = Instance.new('UICorner')
+local _UICorner7 = Instance.new('UICorner')
+local _UICorner8 = Instance.new('UICorner')
+local _UICorner9 = Instance.new('UICorner')
+local _TextButton6 = Instance.new('TextButton')
+local _UICorner10 = Instance.new('UICorner')
+local _Frame4 = Instance.new('Frame')
+local _Frame5 = Instance.new('Frame')
+local _UICorner11 = Instance.new('UICorner')
+local _TextButton7 = Instance.new('TextButton')
+local _UICorner12 = Instance.new('UICorner')
+local _TextLabel3 = Instance.new('TextLabel')
+local _TextButton8 = Instance.new('TextButton')
+local _TextButton9 = Instance.new('TextButton')
+local _UICorner13 = Instance.new('UICorner')
+local _UICorner14 = Instance.new('UICorner')
+
+Instance.new('UICorner')
+
+local _UICorner15 = Instance.new('UICorner')
+local _Frame6 = Instance.new('Frame')
+local _Frame7 = Instance.new('Frame')
+local _UICorner16 = Instance.new('UICorner')
+local u = {}
+local u1 = {}
+
+_ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild('PlayerGui')
+_ScreenGui.ResetOnSpawn = false
+_Frame.Parent = _ScreenGui
+_Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_Frame.BackgroundTransparency = 0.2
+_Frame.Size = UDim2.new(0, 426, 0, 258)
+_Frame.Position = UDim2.new(0.6, -200, 0.8, -300)
+_Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+_UICorner7.Parent = _Frame
+_UICorner7.CornerRadius = UDim.new(0, 10)
+
+local _UserInputService = game:GetService('UserInputService')
+local u2 = nil
+local u3 = nil
+local u4 = nil
+local u5 = nil
+local u6 = function(p1)
+    local v = p1.Position - u4
+
+    _Frame.Position = UDim2.new(u5.X.Scale, u5.X.Offset + v.X, u5.Y.Scale, u5.Y.Offset + v.Y)
+end
+
+_Frame.InputBegan:Connect(function(p2)
+    if p2.UserInputType == Enum.UserInputType.MouseButton1 or p2.UserInputType == Enum.UserInputType.Touch then
+        u2 = true
+        u4 = p2.Position
+        u5 = _Frame.Position
+
+        p2.Changed:Connect(function()
+            if p2.UserInputState == Enum.UserInputState.End then
+                u2 = false
+            end
+        end)
+    end
+end)
+_Frame.InputChanged:Connect(function(p3)
+    if p3.UserInputType == Enum.UserInputType.MouseMovement or p3.UserInputType == Enum.UserInputType.Touch then
+        u3 = p3
+    end
+end)
+_UserInputService.InputChanged:Connect(function(p4)
+    if p4 == u3 and u2 then
+        u6(p4)
+    end
+end)
+
+_Frame2.Parent = _Frame
+_Frame2.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame2.Size = UDim2.new(1, 0, 0, 31)
+_UICorner8.Parent = _Frame2
+_UICorner8.CornerRadius = UDim.new(0, 10)
+_Frame3.Parent = _Frame
+_Frame3.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame3.Size = UDim2.new(1, 0, 0, 30)
+_Frame3.Position = UDim2.new(0, 0, 1, -31)
+_UICorner6.Parent = _Frame3
+_UICorner6.CornerRadius = UDim.new(0, 10)
+_Frame4.Parent = _TextLabel2
+_Frame4.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame4.Size = UDim2.new(1.5, 0, 0, 30)
+_Frame4.Position = UDim2.new(0, 0, 1, -31)
+_UICorner10.Parent = _Frame4
+_UICorner10.CornerRadius = UDim.new(0, 10)
+_Frame5.Parent = _TextLabel2
+_Frame5.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame5.Size = UDim2.new(1.5, 0, 0, 31)
+_Frame5.Position = UDim2.new(0, 0, 0, -30)
+_UICorner11.Parent = _Frame5
+_UICorner11.CornerRadius = UDim.new(0, 10)
+_Frame6.Parent = _TextLabel3
+_Frame6.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame6.Size = UDim2.new(1, 0, 0, 30)
+_Frame6.Position = UDim2.new(0, 0, 1, -31)
+_Frame6.BackgroundTransparency = 0.5
+_UICorner15.Parent = _Frame6
+_UICorner15.CornerRadius = UDim.new(0, 10)
+_Frame7.Parent = _TextLabel3
+_Frame7.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+_Frame7.Size = UDim2.new(1, 0, 0, 31)
+_Frame7.BackgroundTransparency = 0.5
+_UICorner16.Parent = _Frame7
+_UICorner16.CornerRadius = UDim.new(0, 10)
+
+local _TextBox2 = Instance.new('TextBox')
+local _UICorner17 = Instance.new('UICorner')
+
+_TextBox2.Parent = _Frame3
+_TextBox2.Size = UDim2.new(0.4, 0, 1, 0)
+_TextBox2.Position = UDim2.new(0.3, 0, 0, 0)
+_TextBox2.PlaceholderText = 'Enter speed (1 = normal)'
+_TextBox2.TextScaled = true
+_TextBox2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+_TextBox2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextBox2.Text = ''
+_UICorner17.Parent = _TextBox2
+_UICorner17.CornerRadius = UDim.new(0, 10)
+
+_TextBox2.FocusLost:Connect(function(p5)
+    local v1 = p5 and tonumber(_TextBox2.Text)
+
+    if v1 then
+        for _, v2 in pairs(u)do
+            if v2 then
+                if v2:IsPlaying() then
+                    v2:AdjustSpeed(v1)
+                end
+            end
+        end
+    end
+end)
+
+_TextBox.Parent = _Frame2
+_TextBox.Size = UDim2.new(0.4, 0, 1, 0)
+_TextBox.Position = UDim2.new(0.6, -60, 0, 0)
+_TextBox.PlaceholderText = 'Search animations'
+_TextBox.TextScaled = true
+_TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+_TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextBox.Text = ''
+_UICorner2.Parent = _TextBox
+_UICorner2.CornerRadius = UDim.new(0, 10)
+
+local v3 = _TextBox
+
+_TextBox.GetPropertyChangedSignal(v3, 'Text'):Connect(function()
+    local v4 = string.lower(_TextBox.Text)
+
+    for _, v5 in pairs(u1)do
+        if string.find(string.lower(v5.Text), v4) then
+            v5.Visible = true
+        else
+            v5.Visible = false
+        end
+    end
+end)
+
+_TextButton3.Parent = _Frame3
+_TextButton3.BackgroundTransparency = 0.4
+_TextButton3.Size = UDim2.new(0, 50, 0, 30)
+_TextButton3.Position = UDim2.new(0, 70, 0, 0)
+_TextButton3.Text = 'More'
+_TextButton3.Font = Enum.Font.Cartoon
+_TextButton3.TextScaled = true
+_TextButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+_TextButton3.BorderColor3 = Color3.fromRGB(0, 150, 0)
+_TextButton3.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextLabel2.Visible = false
+_UICorner5.Parent = _TextButton3
+_UICorner5.CornerRadius = UDim.new(0, 10)
+
+_TextButton3.MouseButton1Click:Connect(function()
+    _TextLabel2.Visible = not _TextLabel2.Visible
+end)
+
+_TextLabel2.Name = 'TabContainer'
+_TextLabel2.Parent = _Frame
+_TextLabel2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_TextLabel2.Position = UDim2.new(0, -100, 0, 30)
+_TextLabel2.Size = UDim2.new(0, 100, 1, -30)
+_TextLabel2.BackgroundTransparency = 0.2
+_UICorner.Parent = _TextLabel2
+_UICorner.CornerRadius = UDim.new(0, 10)
+_TextLabel.Parent = _Frame2
+_TextLabel.BackgroundTransparency = 1
+_TextLabel.Text = 'Animatrix'
+_TextLabel.Font = Enum.Font.Cartoon
+_TextLabel.TextSize = 25
+_TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextLabel.Size = UDim2.new(0.3, -90, 1, 0)
+_TextLabel.Position = UDim2.new(0.4, -75, 0, 0)
+_TextButton.Parent = _Frame2
+_TextButton.BackgroundTransparency = 1
+_TextButton.Text = 'X'
+_TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+_TextButton.Size = UDim2.new(0, 30, 1, 0)
+_TextButton.Position = UDim2.new(1, -30, 0, 0)
+_TextButton.TextScaled = true
+_TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+
+_TextButton.MouseButton1Click:Connect(function()
+    _ScreenGui:Destroy()
+end)
+
+_TextButton4.Name = 'OtherTab'
+_TextButton4.Parent = _TextLabel2
+_TextButton4.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton4.Position = UDim2.new(0, 0, 0, 30)
+_TextButton4.Size = UDim2.new(1, 0, 0, 30)
+_TextButton4.Font = Enum.Font.Cartoon
+_TextButton4.Text = 'Bundle-Anim'
+_TextButton4.TextWrapped = true
+_TextButton4.TextColor3 = Color3.new(0, 0, 0)
+_TextButton4.TextSize = 20
+_TextButton4.BackgroundTransparency = 0.4
+_UICorner3.CornerRadius = UDim.new(0, 9)
+_UICorner3.Parent = _TextButton4
+_TextButton5.Name = 'MainTab'
+_TextButton5.Parent = _TextLabel2
+_TextButton5.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton5.Position = UDim2.new(0, 0, 0, 0)
+_TextButton5.Size = UDim2.new(1, 0, 0, 30)
+_TextButton5.Font = Enum.Font.Cartoon
+_TextButton5.Text = 'Main'
+_TextButton5.TextWrapped = true
+_TextButton5.TextColor3 = Color3.new(0, 0, 0)
+_TextButton5.TextSize = 25
+_TextButton5.BackgroundTransparency = 0.4
+_UICorner4.CornerRadius = UDim.new(0, 9)
+_UICorner4.Parent = _TextButton5
+_TextButton6.Name = 'AnimTab'
+_TextButton6.Parent = _TextLabel2
+_TextButton6.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton6.Position = UDim2.new(0, 0, 0, 60)
+_TextButton6.Size = UDim2.new(1, 0, 0, 30)
+_TextButton6.Font = Enum.Font.Cartoon
+_TextButton6.Text = 'Anim Scripts'
+_TextButton6.TextWrapped = true
+_TextButton6.TextColor3 = Color3.new(0, 0, 0)
+_TextButton6.TextSize = 20
+_TextButton6.BackgroundTransparency = 0.4
+_UICorner9.CornerRadius = UDim.new(0, 9)
+_UICorner9.Parent = _TextButton6
+_TextButton7.Name = 'AnimTab'
+_TextButton7.Parent = _TextLabel2
+_TextButton7.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton7.Position = UDim2.new(0, 0, 0, 165)
+_TextButton7.Size = UDim2.new(1, 0, 0, 30)
+_TextButton7.Font = Enum.Font.Cartoon
+_TextButton7.Text = 'Museum'
+_TextButton7.TextWrapped = true
+_TextButton7.TextColor3 = Color3.new(0, 0, 0)
+_TextButton7.TextSize = 23
+_TextButton7.BackgroundTransparency = 0.4
+
+_TextButton7.MouseButton1Click:Connect(function()
+    _TextLabel3.Visible = true
+end)
+
+_UICorner12.CornerRadius = UDim.new(0, 9)
+_UICorner12.Parent = _TextButton7
+_TextLabel3.Name = 'MuseumFrameWarn'
+_TextLabel3.Parent = _ScreenGui
+_TextLabel3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_TextLabel3.Position = UDim2.new(0.38, 10, 0.32, 40)
+_TextLabel3.Size = UDim2.new(0.14, 100, 0.27, -30)
+_TextLabel3.Text = 'Are You Sure You Want To Join \nMuseum Of Roblox Animations?'
+_TextLabel3.TextSize = 28
+_TextLabel3.TextColor3 = Color3.new(255, 255, 255)
+_TextLabel3.Font = Enum.Font.Cartoon
+_TextLabel3.Visible = false
+_TextLabel3.BackgroundTransparency = 0
+_UICorner13.CornerRadius = UDim.new(0, 10)
+_UICorner13.Parent = _TextLabel3
+_TextButton9.TextScaled = true
+_TextButton9.TextWrapped = true
+_TextButton9.Font = Enum.Font.Cartoon
+_TextButton9.BackgroundTransparency = 0.3
+_TextButton9.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton9.Text = 'No'
+_TextButton9.Size = UDim2.new(0.3, 0, 0, 40)
+_TextButton9.Position = UDim2.new(0.6, 0, 0.7, 0)
+_TextButton9.Parent = _TextLabel3
+_UICorner14.CornerRadius = UDim.new(0, 10)
+_UICorner14.Parent = _TextButton9
+
+_TextButton9.MouseButton1Click:Connect(function()
+    _TextLabel3.Visible = false
+end)
+
+_TextButton8.TextScaled = true
+_TextButton8.TextWrapped = true
+_TextButton8.Font = Enum.Font.Cartoon
+_TextButton8.BackgroundTransparency = 0.3
+_TextButton8.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+_TextButton8.Text = 'Join'
+_TextButton8.Size = UDim2.new(0.3, 0, 0, 40)
+_TextButton8.Position = UDim2.new(0.1, 0, 0.7, 0)
+_TextButton8.Parent = _TextLabel3
+
+local _UICorner18 = Instance.new('UICorner')
+
+_UICorner18.CornerRadius = UDim.new(0, 10)
+_UICorner18.Parent = _TextButton8
+
+local u7 = 17238090666
+
+_TextButton8.MouseButton1Click:Connect(function()
+    _TextButton8.Text = 'Joining.'
+
+    wait(0.3)
+
+    _TextButton8.Text = 'Joining..'
+
+    wait(0.3)
+
+    _TextButton8.Text = 'Joining...'
+
+    wait(0.3)
+
+    if syn and syn.queue_on_teleport then
+        syn.queue_on_teleport("print('Teleporting to game ID " .. u7 .. "')")
+    end
+
+    game:GetService('TeleportService'):Teleport(u7)
+end)
+
+_ScrollingFrame2.Name = 'OtherFrame'
+_ScrollingFrame2.Parent = _Frame
+_ScrollingFrame2.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+_ScrollingFrame2.Position = UDim2.new(0, 10, 0, 40)
+_ScrollingFrame2.Size = UDim2.new(1, -20, 1, -70)
+_ScrollingFrame2.BackgroundTransparency = 1
+_ScrollingFrame2.CanvasSize = UDim2.new(0, 0, 1, 0)
+_ScrollingFrame2.AutomaticCanvasSize = Enum.AutomaticSize.Y
+_ScrollingFrame2.ScrollBarThickness = 10
+_ScrollingFrame3.Name = 'ContentFrame'
+_ScrollingFrame3.Parent = _Frame
+_ScrollingFrame3.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+_ScrollingFrame3.Position = UDim2.new(0, 10, 0, 40)
+_ScrollingFrame3.Size = UDim2.new(1, -20, 1, -70)
+_ScrollingFrame3.BackgroundTransparency = 1
+_ScrollingFrame3.CanvasSize = UDim2.new(0, 0, 1, 0)
+_ScrollingFrame3.AutomaticCanvasSize = Enum.AutomaticSize.Y
+_ScrollingFrame3.ScrollBarThickness = 10
+_TextButton2.Parent = _Frame2
+_TextButton2.BackgroundTransparency = 1
+_TextButton2.Text = 'v'
+_TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+_TextButton2.Size = UDim2.new(0, 30, 1, 0)
+_TextButton2.Position = UDim2.new(1, -60, 0, 0)
+_TextButton2.TextScaled = true
+_TextButton2.TextColor3 = Color3.fromRGB(0, 0, 255)
+
+local u8 = false
+
+_TextButton2.MouseButton1Click:Connect(function()
+    u8 = not u8
+
+    if u8 then
+        _ScrollingFrame.Visible = false
+        _Frame3.Visible = false
+        _Frame.Size = UDim2.new(0, 426, 0, 31)
+        _TextButton2.Text = '^'
+    else
+        _ScrollingFrame.Visible = true
+        _Frame3.Visible = true
+        _Frame.Size = UDim2.new(0, 426, 0, 258)
+        _TextButton2.Text = 'v'
+    end
+end)
+
+local u9 = 'Main'
+local u10 = false
+local u11 = {
+    {
+        name = 'Main',
+        frame = _ScrollingFrame,
+    },
+    {
+        name = 'Bundle-Anim',
+        frame = _ScrollingFrame2,
+    },
+    {
+        name = 'Anim-Scripts',
+        frame = _ScrollingFrame3,
+    },
+}
+local u12 = function(p6)
+    if u10 then
+        return
+    else
+        for _, v6 in pairs(u11)do
+            v6.frame.Visible = false
+        end
+        for _, v7 in pairs(u11)do
+            if v7.name == p6 then
+                v7.frame.Visible = true
+            end
+        end
+
+        u9 = p6
+
+        return
+    end
+end
+
+_TextButton2.MouseButton1Click:Connect(function()
+    u10 = not u10
+
+    if u10 then
+        _Frame.Size = UDim2.new(0, 300, 0, 30)
+
+        local v8 = _Frame
+
+        for _, v9 in pairs(v8:GetChildren())do
+            if v9 ~= TitleBar then
+                v9.Visible = false
+            end
+        end
+
+        _TextButton2.Text = '+'
+    else
+        _Frame.Size = UDim2.new(0, 300, 0, 200)
+
+        u12(u9)
+
+        _TextButton2.Text = '-'
+    end
+end)
+_TextButton5.MouseButton1Click:Connect(function()
+    u12('Main')
+end)
+_TextButton4.MouseButton1Click:Connect(function()
+    u12('Bundle-Anim')
+end)
+_TextButton6.MouseButton1Click:Connect(function()
+    u12('Anim-Scripts')
+end)
+u12('Main')
+
+_ScrollingFrame.Parent = _Frame
+_ScrollingFrame.Size = UDim2.new(1, -20, 1, -70)
+_ScrollingFrame.Position = UDim2.new(0, 10, 0, 40)
+_ScrollingFrame.BackgroundTransparency = 1
+_ScrollingFrame.CanvasSize = UDim2.new(0, 0, 8, 0)
+_ScrollingFrame.ScrollBarThickness = 10
+_ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+
+local _UIGridLayout = Instance.new('UIGridLayout')
+
+_UIGridLayout.Parent = _ScrollingFrame
+_UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+_UIGridLayout.CellSize = UDim2.new(0, 120, 0, 40)
+_UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
+_UIGridLayout.FillDirectionMaxCells = 3
+
+local _UIGridLayout2 = Instance.new('UIGridLayout')
+
+_UIGridLayout2.Parent = _ScrollingFrame2
+_UIGridLayout2.SortOrder = Enum.SortOrder.LayoutOrder
+_UIGridLayout2.CellSize = UDim2.new(0, 120, 0, 40)
+_UIGridLayout2.CellPadding = UDim2.new(0, 10, 0, 10)
+_UIGridLayout2.FillDirectionMaxCells = 3
+
+local _UIGridLayout3 = Instance.new('UIGridLayout')
+
+_UIGridLayout3.Parent = _ScrollingFrame3
+_UIGridLayout3.SortOrder = Enum.SortOrder.LayoutOrder
+_UIGridLayout3.CellSize = UDim2.new(0, 120, 0, 40)
+_UIGridLayout3.CellPadding = UDim2.new(0, 10, 0, 10)
+_UIGridLayout3.FillDirectionMaxCells = 3
+
+local u13 = {}
+local v15 = function(p7, p8)
+    local _TextButton10 = Instance.new('TextButton')
+    local _UICorner19 = Instance.new('UICorner')
+
+    _TextButton10.Parent = _ScrollingFrame
+    _TextButton10.Text = p7
+    _TextButton10.Font = Enum.Font.Cartoon
+    _TextButton10.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+    _TextButton10.TextScaled = true
+    _TextButton10.TextColor3 = Color3.fromRGB(0, 0, 0)
+    _TextButton10.BackgroundTransparency = 0.2
+    _TextButton10.AutoButtonColor = true
+    _TextButton10.BorderSizePixel = 0
+    _TextButton10.TextWrapped = true
+    _UICorner19.Parent = _TextButton10
+    _UICorner19.CornerRadius = UDim.new(0, 7)
+
+    table.insert(u1, _TextButton10)
+    _TextButton10.MouseButton1Click:Connect(function()
+        local _Humanoid = game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+
+        if _Humanoid then
+            local v10 = type(p8) == 'table' and p8 or {p8}
+            local v11 = false
+
+            for _, v12 in ipairs(v10)do
+                if u13[v12] then
+                    u13[v12]:Stop()
+
+                    u13[v12] = nil
+                else
+                    local _Animation = Instance.new('Animation')
+
+                    _Animation.AnimationId = 'rbxassetid://' .. v12
+
+                    local v13 = _Humanoid:LoadAnimation(_Animation)
+
+                    v13.Looped = true
+
+                    v13:Play()
+
+                    u13[v12] = v13
+                    v11 = true
+                end
+            end
+
+            if v11 then
+                _TextButton10.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+            else
+                _TextButton10.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+            end
+
+            for _, v14 in ipairs(v10)do
+                if u13[v14] then
+                    u13[v14]:AdjustSpeed(tonumber(_TextBox2.Text) or 1)
+                end
+            end
+        end
+    end)
+end
+local v16 = function(p9, p10)
+    local _TextButton11 = Instance.new('TextButton')
+    local _UICorner20 = Instance.new('UICorner')
+
+    _TextButton11.Parent = _ScrollingFrame3
+    _TextButton11.Size = UDim2.new(0.9, 0, 0, 50)
+    _TextButton11.Position = UDim2.new(0.05, 0, 0, 0)
+    _TextButton11.Text = p9
+    _TextButton11.Font = Enum.Font.Cartoon
+    _TextButton11.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+    _TextButton11.TextScaled = true
+    _TextButton11.TextColor3 = Color3.fromRGB(0, 0, 0)
+    _TextButton11.BackgroundTransparency = 0.2
+    _TextButton11.BorderSizePixel = 0
+    _UICorner20.Parent = _TextButton11
+    _UICorner20.CornerRadius = UDim.new(0, 7)
+
+    _TextButton11.MouseButton1Click:Connect(function()
+        _TextButton11.Text = 'Executing.'
+
+        wait(0.3)
+
+        _TextButton11.Text = 'Executing..'
+
+        wait(0.3)
+
+        _TextButton11.Text = 'Executing...'
+
+        wait(0.3)
+
+        _TextButton11.Text = p9
+
+        pcall(p10)
+    end)
+end
+
+v16('Jerk Off By Gio', function()
+    loadstring(game:HttpGet('https://pastefy.app/wa3v2Vgm/raw'))()
+end)
+v16('Dash Anim By Gio', function()
+    loadstring(game:HttpGet('https://pastefy.app/ZhKVgCK3/raw'))()
+end)
+v16('R6 Psycho Anim By Gio', function()
+    loadstring(game:HttpGet('https://pastefy.app/YJITpCRA/raw'))()
+end)
+v16('R6 Killer Anim By Gio', function()
+    loadstring(game:HttpGet('https://pastefy.app/riYch0rX/raw'))()
+end)
+v16('Motion Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MotionHubBeta/BetaMotion/refs/heads/main/MotionHubBeta'))()
+end)
+v16('Classic Anim', function()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-Fe-Classic-Animations-2971'))()
+end)
+v16('Monster Mash Tool', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zerpharix/utrenklpleaserapeme/refs/heads/main/monstermashpotion'))()
+end)
+
+local v20 = function(p11, p12)
+    local _TextButton12 = Instance.new('TextButton')
+    local _UICorner21 = Instance.new('UICorner')
+
+    _TextButton12.Parent = _ScrollingFrame2
+    _TextButton12.Size = UDim2.new(0.9, 0, 0, 50)
+    _TextButton12.Position = UDim2.new(0.05, 0, 0, 0)
+    _TextButton12.Text = p11
+    _TextButton12.Font = Enum.Font.Cartoon
+    _TextButton12.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+    _TextButton12.TextScaled = true
+    _TextButton12.TextColor3 = Color3.fromRGB(0, 0, 0)
+    _TextButton12.BackgroundTransparency = 0.2
+    _TextButton12.BorderSizePixel = 0
+    _UICorner21.Parent = _TextButton12
+    _UICorner21.CornerRadius = UDim.new(0, 7)
+
+    local u14 = function()
+        local _LocalPlayer = game.Players.LocalPlayer
+        local _Animate = (_LocalPlayer.Character or _LocalPlayer.CharacterAdded:Wait()):WaitForChild('Animate')
+
+        for v17, v18 in pairs(p12)do
+            if _Animate:FindFirstChild(v17) then
+                for _, v19 in ipairs(_Animate[v17]:GetChildren())do
+                    if v19:IsA('Animation') then
+                        v19.AnimationId = v18
+                    end
+                end
+            end
+        end
+
+        local _TextLabel4 = Instance.new('TextLabel')
+
+        _TextLabel4.Text = 'Animations Replaced!'
+        _TextLabel4.Size = UDim2.new(0.3, 0, 0.1, 0)
+        _TextLabel4.Position = UDim2.new(0.35, 0, 0.45, 0)
+        _TextLabel4.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
+        _TextLabel4.Font = Enum.Font.Cartoon
+        _TextLabel4.TextScaled = true
+        _TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+        _TextLabel4.Parent = script.Parent
+
+        wait(2)
+        _TextLabel4:Destroy()
+    end
+
+    _TextButton12.MouseButton1Click:Connect(function()
+        u14()
+    end)
+end
+
+v20('Bloxikin Animation', {
+    idle = 'rbxassetid://248332713',
+    idleAlt = 'rbxassetid://248332713',
+    walk = 'rbxassetid://248335946',
+    run = 'rbxassetid://248335946',
+    jump = 'rbxassetid://248336294',
+    fall = 'rbxassetid://248336163',
+    climb = 'rbxassetid://248336677',
+})
+v20('2013 Animation', {
+    idle = 'rbxassetid://161100084',
+    idleAlt = 'rbxassetid://161100084',
+    walk = 'rbxassetid://161210451',
+    run = 'rbxassetid://161210451',
+    jump = 'rbxassetid://165167557',
+    fall = 'rbxassetid://165167632',
+    climb = 'rbxassetid://161235826',
+})
+v20('Sai Animation', {
+    idle = 'rbxassetid://204055750',
+    idleAlt = 'rbxassetid://204055750',
+    walk = 'rbxassetid://28440069',
+    run = 'rbxassetid://28440069',
+    jump = 'rbxassetid://233064613',
+    fall = 'rbxassetid://233322916',
+})
+v20('Reaper Animation', {
+    idle = 'rbxassetid://27744947',
+    idleAlt = 'rbxassetid://27744947',
+    walk = 'rbxassetid://27759319',
+    run = 'rbxassetid://27759319',
+    jump = 'rbxassetid://80979216',
+    fall = 'rbxassetid://73033721',
+})
+v15('2013 Dance', '161099825')
+v15('Dance', '182435998')
+v15('Classic Dance', '27789359')
+v15('Wave', '128777973')
+v15('Laugh', '129423131')
+v15('Balloon Float', '148840371')
+v15('Barrel Throw', '31020869')
+v15('Bike Riding Stance', '189854234')
+v15('Guitar Equip', '192906348')
+v15('saxtest', '30257281')
+v15('Soccer Kick', '28458752')
+v15('drink', '29517689')
+v15('Goal Dance', '28488254')
+v15('Hold', '1119816160')
+v15('Pluck', '99198989')
+v15('Coasting Pose', '160737288')
+v15('Board Kick', '160737244')
+v15('Right Turn', '160737408')
+v15('Left Turn', '160737355')
+v15('Throw From Bag', '30188122')
+v15('Wand Cast', '31665427')
+v15('Left Slash', '74894663')
+v15('Right Slash', '74813494')
+v15('Bloxster Motorcycle', '185299570')
+v15('Drink Anim', '61914540')
+v15('Hyperbike Pose', '214738896')
+v15('RoPed Stand Up', '180270832')
+v15('Large Gun Hold', '941134851')
+v15('Slash', '186934658')
+v15('SprayPaint', '78494810')
+v15('Bang Sus', '106772613')
+v15('Tool Slash', '129967390')
+v15('Rocket Throw', '162861977')
+v15('Lamp Anim', '71012326')
+v15('Plant Anim', '74897796')
+v15('Drink Hot Sauce', '29517689')
+v15('Staff up', '27432691')
+v15('Launch Hand', '33323745')
+v15('Tool Lunge', '129967478')
+v15('Fast Sword Slash', '41824837')
+v15('Pitch Fork', '164025878')
+v15('Fire Gun', '123896085')
+v15('Staff Spin', '27763939')
+v15('something', '123101323')
+v15('Reload Gun', '190070243')
+v15('Fly Wings', '90828653')
+v15('Wave Tool', '160725720')
+v15('FlameThrower Hold', '168086975')
+v15('flaem', '116690317')
+v15('Thrust', '93633158')
+v15('StaffPound', '93696468')
+v15('holdplz2', '116690317')
+v15('Ollie', '160737450')
+v15('Whack', '32659706')
+v15('Ban Hammer Hold', '48138189')
+v15('Cannon', '176177529')
+v15('Laser Gun Equip', '182631367')
+v15('Light Firethrower', '75322014')
+v15('Toss', '75321266')
+v15('BeatBox', '45504977')
+v15('sword swing jump', '32659699')
+v15('twohandswordswing', '32659706')
+v15('Floor Crawl', '282574440')
+v15('Dab', '183412246')
+v15('Super Faint', '181525546')
+v15('Dino Walk', '204328711')
+v15('Loop Slam', '204295235')
+v15('Float Sit', '179224234')
+v15('Barrel Roll', '136801964')
+v15('Jumping Jacks', '429681631')
+v15('Weird Move', '215384594')
+v15('Floating Head', '121572214')
+v15('Levitate', '313762630')
+v15('Hero Jump', '184574340')
+v15('Head Throw', '35154961')
+v15('Moon Dance', '45834924')
+v15('Slap', '204062532')
+v15('Crouch', '182724289')
+v15('Walking Dance', '429703734')
+v15('Spinner', '188632011')
+v15('Holding Gun', '182393478')
+v15('Grenade Throw', '168160500')
+v15('Drive Thru', '168138731')
+v15('Flute', '52154760')
+v15('TableFlip', '111898867')
+v15('Slash Ice', '223624106')
+v15('zmobie', '223623937')
+v15('Begin Smash', '120735709')
+v15('End Smash', '120735762')
+v15('Standing', '158821881')
+v15('QuickSlash', '49815113')
+v15('Sword Equip', '94160581')
+v15('Begin Charge', '252394340')
+v15('Charge', '252395365')
+v15('Release Charge', '252395746')
+v15('BDB Idle', '214747217')
+v15('BDB Walk', '214748382')
+v15('BDB Slash', '214744167')
+v15('BDb Staff', '214744412')
+v15('Weird Swing', '59085834')
+v15('High Slash', '1098424552')
+v15('Rock Sword Equip', '317460113')
+v15('Bash', '193343548')
+v15('StaffSlash', '46756384')
+v15('Tank Guitar', '265084639')
+v15('RHK2 Kick Ninja', '45738282')
+v15('FireCast', '32326240')
+v15('Sword Thrust', '32659703')
+v15('Grim Walk', '27759788')
+v15('Grim Double Hit', '27763344')
+v15('Grim Strike', '27761123')
+v15('Hold Grim', '27758613')
+v15('Gravity Slam', '33169573')
+v15('Wand Swing', '35978913')
+v15('Shake Hand', '177443776')
+v15('Eat', '103822775')
+v15('Throw', '209875013')
+v15('Holding Gun', '264034706')
+v15('Shoot', '97884303')
+v15('Reloading Gun', '97885754')
+v15('Chop', '186934753')
+v15('Slash', '186934658')
+v15('Sword Pump Up', '85723345')
+v15('Ninja Sword Slash', '45873069')
+v15('Shoot Cannon', '182463144')
+v15('Button Press', '75322014')
+v15('Sword Shield', '94789762')
+v15('Electric Guitar', '99200153')
+v15('Pluck Guitar Electric', '99198989')
+v15('Cheers', '314726307')
+v15('OverHeadSwing', '74897796')
+v15('ChopPunch', '181263498')
+v15('UpperPunch', '181263202')
+v15('SlingShot', '33248324')
+v15('Rage', '72635723')
+v15('Spin Arms', '233087184')
+v15('Two Hand Hold Out', '233077885')
+v15('Spin Arms 2', '259438880')
+v15('Arm', '259440107')
+v15('Arms Out Spin', '235542946')
+v15('SlashAnim', '63718551')
+v15('Kick Hit', '188443632')
+v15('Clap', '54456096')
+v15('idk what that is', '69427277')
+v15('slowly arms out', '69427262')
+v15('Salute', '186673959')
+v15('StandStill', '167272039')
+v15('Throw Candy', '181437419')
+v15('Hands Shaking', '93711728')
+v15('Shield', '49763871')
+v15('ShieldBash', '49907410')
+v15('Dance', '248263260')
+v15('Slap Face', '46182987')
+v15('Robot Dance', '466755434')
+v15('Horn Potion Run', '126707392')
+v15('On Fire', '90117804')
+v15('Horse Ride', '321277423')
+v15('Flower', '80395075')
+v15('Hands', '159223413')
+v15('Swing Thonas Hand', '243827693')
+v15('Motorcycle', '247487116')
+v15('Sword Crit Up', '66703957')
+v15('Sword', '66702743')
+v15('Ice Bucket Throw', '173673979')
+v15('Holding Object', '151316061')
+v15('Glider Fly', '90872539')
+v15('Kick Legs', '60882887')
+v15('Wave', '55270038')
+v15('Idle', '94108418')
+v15('Probably Dance', '94161088')
+v15('Spin', '188632011')
+v15('Weird Thrust', '94161333')
+v15('OverHeadSwing', '94160738')
+v15('Gun', '95383474')
+v15('Shoot', '95383980')
+v15('Shake', '99807079')
+v15('Tuck Ski', '142890187')
+v15('Dancing Jacks', {
+    '204328711',
+    '429681631',
+})
+v15('Playing Piano', '673670051')
+v15('GOONMAX\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}', {
+    '95383980',
+    '167272039',
+    '99807079',
+    '106772613',
+})
+v15('BackPack Head', '68339848')
+v15('Crying', '180612465')
+v15('Weird Legs', '248336459')
+v15('Kick Back', '33686061')
+v15('WereWolf Curl', '42070810')
+v15('Saxphone', '45036843')
+v15('RHK', '45733005')
+v15('Penguin Jump', '46196309')
+v15('Staff Taunt', '46700863')
+v15('Praying', '48137861')
+v15('Flute Dance', '52155014')
+v15('Shaking Hand', '52414165')
+v15('Test1', '54145508')
+v15('Stroking It', '55786615')
+v15('Stroking It Fast', '55791140')
+v15('Scream', '73137648')
+v15('Sword Fire', '74815981')
+v15('moon charge', '74909500')
+v15('Start Rest', '75356030')
+v15('Tapping Head', '75477112')
+v15('Swing Hand', '78394786')
+v15('Testzzzzz', '79418964')
+v15('anim walk', '80979216')
+v15('anim stand', '80979207')
+v15('Wavy Hands', '85568863')
+v15('Head Swing', '85570603')
+v15('Sports Jump', '85837259')
+v15('Call me', '86614939')
+v15('Idle Fencing', '87983681')
+v15('Lunge Fencing', '87985027')
+v15('Shaking Legs', '87986341')
+v15('Head Right Position', '88016955')
+v15('Psycho Arms', '90814669')
+v15('Self Harm', '91346946')
+v15('Enrage', '93648331')
+v15('Summon', '93693205')
+v15('Throw', '94157627')
+v15('Slam Leg', '94190213')
+v15('Execute', '94790629')
+v15('Fall Panic', '95424077')
+v15('Spartain Kick', '96619712')
+v15('Looking Up', '97169019')
+v15('Jump Jets', '97170520')
+v15('Landing Jets', '97171309')
+v15('nothinbg', '98454170')
+v15('yay Falling money', '99815141')
+v15('Run Charge', '100348530')
+v15('Football Dance', '101862746')
+v15('Arm Test', '102492689')
+v15('ArmTest 2', '103744157')
+v15('ArmTest 3', '103798833')
+v15('Laying While Snipe Gun', '113246235')
+v15('Laying Down', '181526230')
+v15('Faint', '181525546')
+v15('Laser Gun Crawl', '182749109')
+v15('BEND OVER!!!', '182789003')
+v15('Cover Face', '183696478')
+v15('DinoWalk', '190075311')
+v15('Sai Fall', '233322916')
+v15('SideStep UpperSlash', '247744115')
+v15('Crouch', '287325678')
+v15('Sleep', '327324663')
+v15('Throw', '28604759')
+v15('Monster Mash Dance', '35634514')
+v15('Monster Mash Dance 2', '35654637')
+v15('Listening Boombox', '122342062')
+v15('Cannon Up', '56146409')
+v15('Cannon Down', '56153856')
+v15('Beating Chest', '72635328')
+v15('Shaking Arms Ig', '73177702')
+v15('Arm Slash Sides', '74909569')
+v15('Calling Someone', '87684948')
+v15('Hockey Check', '142495255')
+v15('Arms Up', '187951261')
+v15('Arms Out ', '188242481')
+v15('Bomb Hold', '94861246')
+v15('Shiver', '216937924')
+v15('MRBEAST MEME POINT', '243656287')
